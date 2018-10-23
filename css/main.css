@@ -90,15 +90,55 @@ body {
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
-.about__box--icon {
+.about__box--circle {
   height: 5rem;
   width: 5rem;
   background-color: #94c01c;
   border-radius: 50%;
   padding: 4rem; }
 
-#about__box--icon--1 {
+.about__box--icon {
+  height: 5rem;
+  width: 5rem;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  transition: all .4s; }
+
+.about__box--img {
+  height: 25rem;
+  width: 100%;
+  overflow: hidden; }
+
+.about__box--img:hover .about__box--back,
+.about__box--img:focus .about__box--back {
+  transform: scale(1.2); }
+
+.about__box--img:hover .about__box--back:before,
+.about__box--img:focus .about__box--back:before {
+  display: block; }
+
+.about__box--back {
+  height: 100%;
+  width: 100%;
+  transition: all .35s;
+  background-size: cover; }
+  .about__box--back:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.25); }
+
+#about-icon-1 {
   background-image: url(../img/icon_history_white.png); }
+  #about-icon-1:hover {
+    background-image: url(../img/icon_history_braz.png); }
+
+#about-img-1 {
+  background-image: url(../img/box_1.jpg); }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;

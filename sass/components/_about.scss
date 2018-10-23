@@ -1,11 +1,64 @@
-.about__box--icon {
-    height: 5rem;
-    width: 5rem;
-    background-color: $color-secondary;
-    border-radius: 50%;
-    padding: 4rem;
+.about__box {
+
+    &--circle {
+        height: 5rem;
+        width: 5rem;
+        background-color: $color-secondary;
+        border-radius: 50%;
+        padding: 4rem;
+    }
+
+    &--icon {
+        height: 5rem;
+        width: 5rem;
+        background-size: cover;
+        transform: translate(-50%, -50%);
+        transition: all .4s;
+    }
+
+    &--img {
+        height: 25rem;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &--img:hover &--back,
+    &--img:focus &--back {
+        transform: scale(1.2);
+    }
+
+    &--img:hover &--back:before,
+    &--img:focus &--back:before {
+        display: block;
+    }
+
+    &--back {
+        height: 100%;
+        width: 100%;
+        transition: all .35s;
+        background-size: cover;
+
+        &:before {
+            content: "";
+            display: none;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    }
 }
 
-#about__box--icon--1 {
+#about-icon-1 {
     background-image: url(../img/icon_history_white.png);
+
+    &:hover {
+        background-image: url(../img/icon_history_braz.png);
+    }
+}
+
+#about-img-1 {
+    background-image: url(../img/box_1.jpg);
 }
