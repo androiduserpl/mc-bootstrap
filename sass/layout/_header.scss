@@ -1,0 +1,21 @@
+.header__slider--slide {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#slide-1 { background-image: url(../img/coconut_slajder.jpg); }
+#slide-2 { background-image: url(../img/rose_slajder.jpg); }
+#slide-3 { background-image: url(../img/vanilla_slajder.jpg); }
+
+/* slider dots */
+
+.slick-dots {
+    bottom: 1rem;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #442517;
+}
