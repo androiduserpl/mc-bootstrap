@@ -22,14 +22,32 @@
         overflow: hidden;
     }
 
-    &--img:hover &--back,
-    &--img:focus &--back {
+    &:hover #about-icon-1 {
+        background-image: url(../img/icon_history_braz.png);
+    }
+    
+    &:hover #about-icon-2 {
+        background-image: url(../img/icon_leaf_braz.png);
+    }
+    
+    &:hover #about-icon-3 {
+        background-image: url(../img/icon_bottler_braz.png);
+    }
+
+    &:hover &--back,
+    &:focus &--back {
         transform: scale(1.2);
     }
 
-    &--img:hover &--back:before,
-    &--img:focus &--back:before {
+    &:hover &--back:before,
+    &:focus &--back:before {
         display: block;
+    }
+
+    &:hover .btn--up {
+        opacity: 1;
+        transform: translate(-50%, -20%);
+        color: $color-white;
     }
 
     &--back {
@@ -53,12 +71,24 @@
 
 #about-icon-1 {
     background-image: url(../img/icon_history_white.png);
-
-    &:hover {
-        background-image: url(../img/icon_history_braz.png);
-    }
 }
 
 #about-img-1 {
     background-image: url(../img/box_1.jpg);
+}
+
+#about-icon-2 {
+    background-image: url(../img/icon_leaf_white.png);
+}
+
+#about-img-2 {
+    background-image: url(../img/box_2.jpg);
+}
+
+#about-icon-3 {
+    background-image: url(../img/icon_bottler_white.png);
+}
+
+#about-img-3 {
+    background-image: url(../img/box_3.jpg);
 }
